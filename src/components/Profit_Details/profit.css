@@ -1,0 +1,194 @@
+.profit_bar{
+    width: 400px;
+    height: 700px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    transform: translateY(100px);
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_detail{
+    width: 400px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(60px,60px);
+}
+
+.profit_picture{
+    position:absolute;
+    align-self:center;
+    z-index: 2;
+}
+
+.NameInform{
+    position: absolute;
+    transform: translateY(100px);
+    font-size: 28.42px;
+    
+}
+
+.Name{
+    color: #0B0909;
+    font-style: normal;
+    line-height: 35.525px; /* 125% */
+    margin-bottom: 5px;
+}
+
+.Job{
+    color: rgba(11, 9, 9, 0.50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+    margin: 5px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    border-radius: 8.269px;
+    background: #F2F7FC;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.icon_bar{
+    display: flex;
+    position: absolute;
+    transform: translateY(230px);
+    flex-direction: row;
+}
+
+.svg{
+    scale: 0.35;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(320px);
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F2F5F9;
+}
+
+.phone{
+    margin: 15px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    scale: 1.2;
+    transform: translateX(-60px);
+}
+
+.phone_text{
+    color: rgba(26, 16, 3, 0.50);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px; /* 0% */
+    transform: translate(20px);
+}
+
+.phone_number{
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    transform: translate(-20px,10px);
+}
+
+.line{
+    width: 50%;
+    margin-left: 0;
+    position: relative;
+    transform: translate(90px,-10px);
+}
+
+.email{
+    transform: translateX(-15px);
+    margin: 15px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    scale: 1.2;
+}
+
+.email_text{
+    color: rgba(26, 16, 3, 0.50);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px; /* 0% */
+    transform: translate(20px,-10px);
+}
+
+.email_content{
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    transform: translate(-14px,5px);
+}
+
+.location{
+    transform: translateX(-48px);
+    margin: 15px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    scale: 1.2;
+}
+
+.location_text{
+    color: rgba(26, 16, 3, 0.50);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px; /* 0% */
+    transform: translate(20px,-10px);
+}
+
+.location_content{
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    transform: translate(-35px,5px);
+}
+
+.download_resume{
+    width: 185px;
+    height: 30px;
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: linear-gradient(127deg, #FF9C1A 0%, #E80505 100%);
+}
+
+.download_text{
+    color: #F2F7FC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+}

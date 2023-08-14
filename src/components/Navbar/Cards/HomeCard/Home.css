@@ -1,0 +1,112 @@
+.Home{
+    position: absolute;
+    transform: translate(500px,60px);
+    width: 820px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h1{
+    color: #0B0909;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+
+.Line{
+    position: relatives;
+    transform: translateX(30px);
+}
+
+.AboutMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.AboutMe-detail{
+    color: #000;
+    font-size: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-align:justify;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.WhatIdo-text{
+    color: #0B0909;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+    letter-spacing: 0.8px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.WhatIdo-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Block1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+    width: 333px;
+    height: 169px;
+    border-radius: 20px;
+    background: #FFEBD1;
+}
+
+.Block2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+    width: 333px;
+    height: 169px;
+    border-radius: 20px;
+    background: #F2F7FC;
+}
+
+.block-icon{
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.block-title{
+    margin-top: 5px;
+}
+
+.block-text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.35px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    transform: translateY(-30px);
+}
