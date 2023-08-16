@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Home from './Cards/HomeCard/Home'
+import Home from './Cards/HomeCard/Home';
 import Resume from "./Cards/ResumeCard/Resume";
+import Work from './Cards/WorkCard/Work'
 
 export default function Navbar(){
     const [buttonStates, setButtonStates] = useState({
@@ -28,7 +29,7 @@ export default function Navbar(){
                 <ul>
                     <li>
                         <Link to='/Home'>
-                            <a href="#" className={buttonStates.home? 'active-button':'inactive-button'} onClick={()=>toggleButton('home')}>
+                            <a className={buttonStates.home? 'active-button':'inactive-button'} onClick={()=>toggleButton('home')}>
                                 <div className="icon_box">
                                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
                                     <span class="material-symbols-outlined">home</span>
@@ -42,7 +43,7 @@ export default function Navbar(){
 
                     <li>
                         <Link to='/Resume'>
-                            <a href="#" className={buttonStates.resume? 'active-button':'inactive-button'} onClick={()=>toggleButton('resume')}>
+                            <a className={buttonStates.resume? 'active-button':'inactive-button'} onClick={()=>toggleButton('resume')}>
                                 <div className="icon_box">
                                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
                                     <span class="material-symbols-outlined">assignment</span>
@@ -54,18 +55,20 @@ export default function Navbar(){
                     </li>
 
                     <li>
-                        <a href="#" className={buttonStates.work? 'active-button':'inactive-button'} onClick={()=>toggleButton('work')}>
-                            <div className="icon_box">
-                                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                                <span class="material-symbols-outlined">work</span>
-                                <p className="text">Work</p>
-                            </div>                        
-                        </a>
+                        <Link to='/Work'>
+                            <a className={buttonStates.work? 'active-button':'inactive-button'} onClick={()=>toggleButton('work')}>
+                                <div className="icon_box">
+                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+                                    <span class="material-symbols-outlined">work</span>
+                                    <p className="text">Work</p>
+                                </div>                        
+                            </a>                            
+                        </Link>
 
                     </li>
 
                     <li>
-                        <a href="#" className={buttonStates.contacts? 'active-button':'inactive-button'} onClick={()=>toggleButton('contacts')}>
+                        <a className={buttonStates.contacts? 'active-button':'inactive-button'} onClick={()=>toggleButton('contacts')}>
                             <div className="icon_box">
                                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
                                 <span class="material-symbols-outlined">contacts</span>
@@ -79,6 +82,7 @@ export default function Navbar(){
             <Routes>
                 <Route path="Home" element={<Home/>}/>
                 <Route path="Resume" element={<Resume/>}/>
+                <Route path="Work" element={<Work/>}/>
             </Routes>            
         </Router>
 

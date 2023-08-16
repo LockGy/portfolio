@@ -11,3 +11,185 @@
     align-items: flex-start;
     flex-direction: column;
 }
+
+
+.Resume-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Resume-detail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.Block-text{
+    margin-left: 20px;
+    color: #000;
+    font-size: 27.737px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46.229px; /* 166.667% */
+    letter-spacing: 0.693px;
+}
+
+.education-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.block1{
+    margin-bottom: 30px;
+    width: 288.929px;
+    height: 115.572px;
+    flex-shrink: 0;
+    border-radius: 9.246px;
+    background: #FFE3BF;
+    text-align: left;
+}
+
+.block2{
+    margin-bottom: 30px;
+    width: 288.929px;
+    height: 115.572px;
+    flex-shrink: 0;
+    border-radius: 9.246px;
+    background: #FFEED9;
+    text-align: left;
+}
+
+.time{
+    color: rgba(26, 16, 3, 0.50);
+    font-family: Raleway;
+    font-size: 13.869px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 9.25px;
+    margin-left: 20px;
+}
+
+.major{
+    color: #000;
+    font-family: Raleway;
+    font-size: 13.869px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 9.25px;
+    margin-left: 20px;
+}
+
+.College{
+    color: #000;
+    font-family: Raleway;
+    font-size: 13.869px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 9.25px;
+    margin-left: 20px;
+}
+
+.experience{
+    width: 350px;
+    height: 400px;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.work-skills{
+    width: 350px;
+    height: 200px;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.work-skills-title{
+    color: #000;
+    font-size: 27.737px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46.229px; /* 166.667% */
+    letter-spacing: 0.693px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.soft-skills{
+    width: 350px;
+    height: 200px;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.soft-skills-title{
+    color: #000;
+    font-size: 27.737px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46.229px; /* 166.667% */
+    letter-spacing: 0.693px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.work-skills-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-skills-block-information{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #E1E8EF;
+}
+
+.work-skills-block-information-text{
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.soft-skills-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.soft-skills-block-information{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #E1E8EF;
+}
+
+.soft-skills-block-information-text{
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
