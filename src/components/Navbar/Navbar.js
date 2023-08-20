@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import {BrowserRouter as Router,Routes,Route,redirect } from "react-router-dom";
 import Home from './Cards/HomeCard/Home';
 import Resume from "./Cards/ResumeCard/Resume";
 import Work from './Cards/WorkCard/Work'
+import Contacts from "./Cards/ContacsCard/Contact";
 
 export default function Navbar(){
     const [buttonStates, setButtonStates] = useState({
@@ -28,7 +29,7 @@ export default function Navbar(){
             <nav className="Navbar">   
                 <ul>
                     <li>
-                        <Link to='/Home'>
+                        <Link to='/'>
                             <a className={buttonStates.home? 'active-button':'inactive-button'} onClick={()=>toggleButton('home')}>
                                 <div className="icon_box">
                                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -68,21 +69,24 @@ export default function Navbar(){
                     </li>
 
                     <li>
-                        <a className={buttonStates.contacts? 'active-button':'inactive-button'} onClick={()=>toggleButton('contacts')}>
-                            <div className="icon_box">
-                                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                                <span class="material-symbols-outlined">contacts</span>
-                                <p className="text">Contacts</p>
-                            </div>                        
-                        </a>
+                        <Link to={'/Contact'}>
+                            <a className={buttonStates.contacts? 'active-button':'inactive-button'} onClick={()=>toggleButton('contacts')}>
+                                <div className="icon_box">
+                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+                                    <span class="material-symbols-outlined">contacts</span>
+                                    <p className="text">Contacts</p>
+                                </div>                        
+                            </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
 
             <Routes>
-                <Route path="Home" element={<Home/>}/>
-                <Route path="Resume" element={<Resume/>}/>
-                <Route path="Work" element={<Work/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/Resume" element={<Resume/>}/>
+                <Route path="/Work/*" element={<Work/>}/>
+                <Route path="/Contact" element={<Contacts/>}/>
             </Routes>            
         </Router>
 

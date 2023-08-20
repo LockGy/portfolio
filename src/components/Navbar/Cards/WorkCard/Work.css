@@ -11,3 +11,46 @@
     align-items: flex-start;
     flex-direction: column;
 }
+.Line{
+    position: relatives;
+    transform: translateX(30px);
+}
+
+.Work-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Work-navbar{
+    transform: translateX(50%);
+}
+
+.Work-navbar ul{
+    justify-content: space-between;
+    padding: 0%;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Work-navbar ul li{
+    color: #57657A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.Work-navbar ul li .work-activeButton{
+    color: #FA5252;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+

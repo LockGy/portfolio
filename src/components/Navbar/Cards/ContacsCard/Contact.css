@@ -1,0 +1,102 @@
+.Contact{
+    position: absolute;
+    transform: translate(500px,60px);
+    width: 820px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Line{
+    position: relatives;
+    transform: translateX(30px);
+}
+
+.Contact-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Contact-detail{
+    width: 820px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Contact-phone{
+    margin: 20px;
+    width: 333px;
+    height: 150px;
+    border-radius: 20px;
+    background: #FFEED9;
+    justify-content: flex-start;
+}
+
+.Contact-email{
+    margin: 20px;
+    width: 333px;
+    height: 150px;
+    border-radius: 20px;
+    background: #F2F7FC;;
+}
+
+.Contact-block-title{
+    position: relative;
+    transform: translateX(30px);
+    display: flex;
+    flex-direction: row;
+}
+
+.Phone-text{
+    margin-left: 10px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 250% */
+    letter-spacing: 0.4px;
+}
+
+.Phone_number{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    transform: translate(-60px,-40px);
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 250% */
+    letter-spacing: 0.4px;
+}
+
+.Email-text{
+    margin-left: 10px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 250% */
+    letter-spacing: 0.4px;
+}
+
+.Email-address{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    transform: translate(0px,-40px);
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 285.714% */
+    letter-spacing: 0.35px;
+}
