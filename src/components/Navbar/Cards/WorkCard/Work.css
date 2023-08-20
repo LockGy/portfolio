@@ -53,4 +53,7 @@
     line-height: normal;
 }
 
+a:link{
+    text-decoration: none;
+}
 
