@@ -45,6 +45,14 @@
     margin-right: 20px;
 }
 
+.Work-navbar ul li .work-inactiveButton{
+    color: #57657A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .Work-navbar ul li .work-activeButton{
     color: #FA5252;
     font-size: 16px;
