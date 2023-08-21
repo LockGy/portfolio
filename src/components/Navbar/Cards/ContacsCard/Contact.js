@@ -19,7 +19,7 @@ export default function Contacts(){
             
                 // show the user a success message
         }, (error) => {
-            console.log(error.text);
+            alert("Sending email Fail, please try again!")
                 // show the user an error
         });
     };
