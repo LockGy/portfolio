@@ -100,3 +100,89 @@
     line-height: 40px; /* 285.714% */
     letter-spacing: 0.35px;
 }
+
+.Contact-form{
+    position: relative;
+    transform: translate(10%,40px);
+    width: 694px;
+    height: 392px;
+    border-radius: 20px;
+    background: #F8FBFB;
+}
+
+.Email-submit-text{
+    position: relative;
+    transform: translateY(30px);
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: left;
+}
+
+.Contact-input{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    transform: translate(70px,50px);
+}
+
+.Form-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.4px;
+}
+
+.Form-input{
+    background-color: white;;
+    height: 30px;
+    width: 530px;
+    border: 2px black;
+}
+
+input[type=submit]{
+    position: relative;
+    color: #000;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    padding: 5px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    scale: 1.5;
+}
+
+input[type=submit]:hover{
+    color: #000;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    padding: 5px 20px;
+    color: white;
+    background:linear-gradient(127deg, #FF9C1A 0%, #E80505 100%);    ;
+    border:none;
+    border-radius: 20px;
+    scale: 1.5;
+}
+
+.Form-send{
+    position: relative;
+    transform: translate(0px,10px);
+    width: 124px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: linear-gradient(127deg, #FF9C1A 0%, #E80505 100%);
+}
