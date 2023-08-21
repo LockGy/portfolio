@@ -13,6 +13,7 @@ export default function Contacts(){
        
         emailjs.sendForm('service_ig5jphk', 'template_folaksj', form.current, 'WbqRjTx4xv6KKQ4mR')
         .then((result) => {
+            alert("Sending email successfully")
             console.log(result.text);
                 // show the user a success message
         }, (error) => {
